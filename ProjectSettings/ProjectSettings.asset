@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: ggggg
+  companyName: Tinysoft
+  productName: GlowingGiggle
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -773,24 +773,24 @@ PlayerSettings:
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
   scriptingDefineSymbols:
-    Android: QUANTUM_LOGLEVEL_INFO
-    EmbeddedLinux: QUANTUM_LOGLEVEL_INFO
-    GameCoreScarlett: QUANTUM_LOGLEVEL_INFO
-    GameCoreXboxOne: QUANTUM_LOGLEVEL_INFO
-    Kepler: QUANTUM_LOGLEVEL_INFO
-    LinuxHeadlessSimulation: QUANTUM_LOGLEVEL_INFO
-    Nintendo Switch: QUANTUM_LOGLEVEL_INFO
-    Nintendo Switch 2: QUANTUM_LOGLEVEL_INFO
-    PS4: QUANTUM_LOGLEVEL_INFO
-    PS5: QUANTUM_LOGLEVEL_INFO
-    QNX: QUANTUM_LOGLEVEL_INFO
-    Standalone: QUANTUM_LOGLEVEL_INFO
-    VisionOS: QUANTUM_LOGLEVEL_INFO
-    WebGL: QUANTUM_LOGLEVEL_INFO
-    Windows Store Apps: QUANTUM_LOGLEVEL_INFO
-    XboxOne: QUANTUM_LOGLEVEL_INFO
-    iPhone: QUANTUM_LOGLEVEL_INFO
-    tvOS: QUANTUM_LOGLEVEL_INFO
+    Android: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    EmbeddedLinux: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    GameCoreScarlett: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    GameCoreXboxOne: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    Kepler: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    LinuxHeadlessSimulation: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    Nintendo Switch: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    Nintendo Switch 2: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    PS4: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    PS5: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    QNX: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    Standalone: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    VisionOS: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    WebGL: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    Windows Store Apps: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    XboxOne: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    iPhone: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
+    tvOS: QUANTUM_LOGLEVEL_INFO;QUANTUM_XY
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

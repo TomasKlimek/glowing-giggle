@@ -29,6 +29,7 @@ namespace Quantum {
     }
   }
 
+  [System.Serializable]
   public unsafe partial struct Input {
 
     static partial void SerializeCodeGen(void* ptr, FrameSerializer serializer);

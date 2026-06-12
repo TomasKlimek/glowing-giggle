@@ -1,6 +1,6 @@
 ﻿namespace Quantum
 {
-    public partial class RuntimePlayer
-    {
-    }
+	public partial class RuntimePlayer
+	{
+	}
 }

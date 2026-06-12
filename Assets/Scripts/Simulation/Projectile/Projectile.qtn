@@ -1,0 +1,7 @@
+component Projectile
+{
+	FP Speed;
+
+	[ExcludeFromPrototype] int       Damage;
+	[ExcludeFromPrototype] EntityRef Owner;
+}

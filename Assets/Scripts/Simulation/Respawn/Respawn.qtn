@@ -1,0 +1,9 @@
+component SpawnPoint
+{
+}
+
+[ExcludeFromPrototype]
+component Respawn
+{
+	FP Timer;
+}

@@ -71,9 +71,9 @@ MonoBehaviour:
     RawValue: 0
   RestitutionCombineFunction: 3
   FrictionStatic:
-    RawValue: 39322
+    RawValue: 0
   FrictionDynamic:
-    RawValue: 39322
+    RawValue: 0
   FrictionCombineFunction: 3
 --- !u!114 &11400000
 MonoBehaviour:
@@ -167,31 +167,25 @@ MonoBehaviour:
       Value: 2338784452642738821
   Entries:
   - SystemType:
+      AssemblyQualifiedName: Quantum.PlayerSystem, Quantum.Simulation, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    SystemName: 
+    StartDisabled: 0
+    Children: []
+  - SystemType:
+      AssemblyQualifiedName: Quantum.RespawnSystem, Quantum.Simulation, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    SystemName: 
+    StartDisabled: 0
+    Children: []
+  - SystemType:
       AssemblyQualifiedName: Quantum.Core.CullingSystem2D, Quantum.Simulation, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
     SystemName: 
     StartDisabled: 0
     Children: []
   - SystemType:
-      AssemblyQualifiedName: Quantum.Core.CullingSystem3D, Quantum.Simulation, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    SystemName: 
-    StartDisabled: 0
-    Children: []
-  - SystemType:
       AssemblyQualifiedName: Quantum.Core.PhysicsSystem2D, Quantum.Simulation, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    SystemName: 
-    StartDisabled: 0
-    Children: []
-  - SystemType:
-      AssemblyQualifiedName: Quantum.Core.PhysicsSystem3D, Quantum.Simulation, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    SystemName: 
-    StartDisabled: 0
-    Children: []
-  - SystemType:
-      AssemblyQualifiedName: Quantum.Core.NavigationSystem, Quantum.Simulation, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
     SystemName: 
     StartDisabled: 0
@@ -205,6 +199,30 @@ MonoBehaviour:
   - SystemType:
       AssemblyQualifiedName: Quantum.Core.PlayerConnectedSystem, Quantum.Simulation,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    SystemName: 
+    StartDisabled: 0
+    Children: []
+  - SystemType:
+      AssemblyQualifiedName: Quantum.MovementSystem, Quantum.Simulation, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    SystemName: 
+    StartDisabled: 0
+    Children: []
+  - SystemType:
+      AssemblyQualifiedName: Quantum.WeaponSystem, Quantum.Simulation, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    SystemName: 
+    StartDisabled: 0
+    Children: []
+  - SystemType:
+      AssemblyQualifiedName: Quantum.ProjectileSystem, Quantum.Simulation, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    SystemName: 
+    StartDisabled: 0
+    Children: []
+  - SystemType:
+      AssemblyQualifiedName: Quantum.HealthSystem, Quantum.Simulation, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
     SystemName: 
     StartDisabled: 0
     Children: []
@@ -234,15 +252,15 @@ MonoBehaviour:
       X:
         RawValue: 0
       Y:
-        RawValue: -655360
+        RawValue: 0
       Z:
         RawValue: 0
     SolverType: 1
     SolverIterations: 4
     PositionSolverIterations: 2
-    UseJoints: 1
-    UseAngularVelocity: 1
-    UseVerticalTransform: 1
+    UseJoints: 0
+    UseAngularVelocity: 0
+    UseVerticalTransform: 0
     PenetrationAllowance:
       RawValue: 655
     PenetrationCorrection:

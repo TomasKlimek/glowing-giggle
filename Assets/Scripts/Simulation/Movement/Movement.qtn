@@ -1,0 +1,6 @@
+component Movement
+{
+	FP Speed;
+
+	[ExcludeFromPrototype] FPVector2 Desires;
+}

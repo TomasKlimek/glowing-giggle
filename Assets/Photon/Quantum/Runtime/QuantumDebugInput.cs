@@ -7,8 +7,16 @@ namespace Quantum {
   /// </summary>
   public class QuantumDebugInput : MonoBehaviour {
 
+    [SerializeField] Input _lastInput;
+
+    private bool _attackPressed;
+
     private void OnEnable() {
       QuantumCallback.Subscribe(this, (CallbackPollInput callback) => PollInput(callback));
+    }
+
+    private void Update() {
+      _attackPressed |= UnityEngine.Input.GetKey(KeyCode.Space);
     }
 
     /// <summary>
@@ -25,7 +33,24 @@ namespace Quantum {
 #endif
 
       Quantum.Input i = new Quantum.Input();
+
+      var horizontal = UnityEngine.Input.GetAxis("Horizontal");
+      var vertical  = UnityEngine.Input.GetAxis("Vertical");
+
+
+      var directon = new FPVector2
+      {
+        X = horizontal > 0 ? FP._1 : horizontal < 0 ? FP.Minus_1 : 0,
+        Y = vertical   > 0 ? FP._1 : vertical   < 0 ? FP.Minus_1 : 0,
+      };
+
+      i.Direction = directon;
+      i.Attack    = _attackPressed;
+
       callback.SetInput(i, DeterministicInputFlags.Repeatable);
+
+      _lastInput     = i;
+      _attackPressed = false;
     }
   }
 }

@@ -1,0 +1,5 @@
+component Player
+{
+	[ExcludeFromPrototype] PlayerRef PlayerRef;
+	[ExcludeFromPrototype] int       Score;
+}

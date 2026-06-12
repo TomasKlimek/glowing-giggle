@@ -1,0 +1,7 @@
+component Health
+{
+	int Max;
+	FP  RespawnTime;
+
+	[ExcludeFromPrototype] int Current;
+}

@@ -1,0 +1,8 @@
+component Weapon
+{
+	FP                        AttackTime;
+	AssetRef<EntityPrototype> Projectile;
+
+	[ExcludeFromPrototype] bool Desires;
+	[ExcludeFromPrototype] FP   Timer;
+}
