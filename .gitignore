@@ -1,0 +1,65 @@
+
+# general
+**/.DS_Store
+**/.idea
+
+# fastlane
+fastlane/report.xml
+
+# unity
+**/*.aab
+**/*.apk
+
+# FMOD - from wizard
+# Never ignore DLLs in the FMOD subfolder.
+!/[Aa]ssets/Plugins/FMOD/**/lib/*
+
+# Don't ignore images and gizmos used by FMOD in the Unity Editor.
+!/[Aa]ssets/Gizmos/FMOD/*
+!/[Aa]ssets/Editor Default Resources/FMOD/*
+
+# Ignore the Cache folder since it is updated locally.
+/[Aa]ssets/Plugins/FMOD/Cache/*
+/[Aa]ssets/Plugins/FMOD/Cache.meta
+
+# Ignore bank files in the StreamingAssets folder.
+/[Aa]ssets/StreamingAssets/**/*.bank
+/[Aa]ssets/StreamingAssets/**/*.bank.meta
+
+# If the source bank files are kept outside of the StreamingAssets folder then these can be ignored.
+# Log files can be ignored.
+fmod_editor.log
+
+
+google-credentials.json
+
+build
+Library
+Logs
+Temp
+Assembly-CSharp.csproj
+*.csproj
+*.sln
+UserSettings
+.vsconfig
+obj
+.vs
+Replays
+RemoteReplays
+HeadlessReports
+Quantum.Dotnet
+*.DotSettings.user
+ConsoleRunner/EditorBatchLog.txt
+SaveGame
+Assets/Plugins/vFavorites/vFavorites Data.asset
+Assets/Plugins/vFavorites/vFavorites Data.asset.meta
+Recordings
+*.slnx
+Assets/Resources/Settings/Gameplay UI.asset
+Assets/Resources/Settings/Gameplay UI.asset
+Assets/Resources/Settings/Gameplay UI.asset
+Assets/_Recovery.meta
+Assets/_Recovery
+Assets/GeneratedLocalRepo
+Assets/GeneratedLocalRepo.meta
+Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml
