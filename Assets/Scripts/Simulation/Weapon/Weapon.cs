@@ -20,7 +20,7 @@
 			var projectileEntity    = frame.Create(Projectile);
 			var projectile          = frame.Unsafe.GetPointer<Projectile>(projectileEntity);
 			
-			projectile->Set(frame, projectileEntity, filter.Entity, filter.Transform->Position, filter.Transform->Forward);
+			projectile->Set(frame, projectileEntity, filter.Entity, filter.Transform->Position, filter.Transform->Forward, Range);
 		}
 	}
 }

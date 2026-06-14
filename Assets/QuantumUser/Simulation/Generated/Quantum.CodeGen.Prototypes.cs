@@ -142,6 +142,7 @@ namespace Quantum.Prototypes {
   [Quantum.Prototypes.Prototype(typeof(Quantum.Weapon))]
   public unsafe partial class WeaponPrototype : ComponentPrototype<Quantum.Weapon> {
     public FP AttackTime;
+    public FP Range;
     public AssetRef<EntityPrototype> Projectile;
     partial void MaterializeUser(Frame frame, ref Quantum.Weapon result, in PrototypeMaterializationContext context);
     public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
@@ -151,6 +152,7 @@ namespace Quantum.Prototypes {
     }
     public void Materialize(Frame frame, ref Quantum.Weapon result, in PrototypeMaterializationContext context = default) {
         result.AttackTime = this.AttackTime;
+        result.Range = this.Range;
         result.Projectile = this.Projectile;
         MaterializeUser(frame, ref result, in context);
     }

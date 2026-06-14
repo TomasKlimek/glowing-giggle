@@ -2,6 +2,6 @@ component Projectile
 {
 	FP Speed;
 
-	[ExcludeFromPrototype] int       Damage;
+	[ExcludeFromPrototype] FP        Lifetime;
 	[ExcludeFromPrototype] EntityRef Owner;
 }

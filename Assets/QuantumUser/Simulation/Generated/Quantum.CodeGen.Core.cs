@@ -695,25 +695,25 @@ namespace Quantum {
     public const Int32 ALIGNMENT = 8;
     [FieldOffset(16)]
     public FP Speed;
-    [FieldOffset(0)]
-    [ExcludeFromPrototype()]
-    public Int32 Damage;
     [FieldOffset(8)]
+    [ExcludeFromPrototype()]
+    public FP Lifetime;
+    [FieldOffset(0)]
     [ExcludeFromPrototype()]
     public EntityRef Owner;
     public override readonly Int32 GetHashCode() {
       unchecked { 
         var hash = 16141;
         hash = hash * 31 + Speed.GetHashCode();
-        hash = hash * 31 + Damage.GetHashCode();
+        hash = hash * 31 + Lifetime.GetHashCode();
         hash = hash * 31 + Owner.GetHashCode();
         return hash;
       }
     }
     public static void Serialize(void* ptr, FrameSerializer serializer) {
         var p = (Projectile*)ptr;
-        serializer.Stream.Serialize(&p->Damage);
         EntityRef.Serialize(&p->Owner, serializer);
+        FP.Serialize(&p->Lifetime, serializer);
         FP.Serialize(&p->Speed, serializer);
     }
   }
@@ -754,22 +754,25 @@ namespace Quantum {
   }
   [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct Weapon : Quantum.IComponent {
-    public const Int32 SIZE = 32;
+    public const Int32 SIZE = 40;
     public const Int32 ALIGNMENT = 8;
     [FieldOffset(16)]
     public FP AttackTime;
+    [FieldOffset(24)]
+    public FP Range;
     [FieldOffset(8)]
     public AssetRef<EntityPrototype> Projectile;
     [FieldOffset(0)]
     [ExcludeFromPrototype()]
     public QBoolean Desires;
-    [FieldOffset(24)]
+    [FieldOffset(32)]
     [ExcludeFromPrototype()]
     public FP Timer;
     public override readonly Int32 GetHashCode() {
       unchecked { 
         var hash = 8713;
         hash = hash * 31 + AttackTime.GetHashCode();
+        hash = hash * 31 + Range.GetHashCode();
         hash = hash * 31 + Projectile.GetHashCode();
         hash = hash * 31 + Desires.GetHashCode();
         hash = hash * 31 + Timer.GetHashCode();
@@ -781,6 +784,7 @@ namespace Quantum {
         QBoolean.Serialize(&p->Desires, serializer);
         AssetRef.Serialize(&p->Projectile, serializer);
         FP.Serialize(&p->AttackTime, serializer);
+        FP.Serialize(&p->Range, serializer);
         FP.Serialize(&p->Timer, serializer);
     }
   }
