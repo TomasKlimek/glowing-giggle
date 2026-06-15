@@ -7,7 +7,7 @@ namespace Quantum
 		public EntityRef Entity;
 		public Player*   Player;
 		public Movement* Movement;
-		public Weapon*   Weapon;
+		public Weapons*  Weapons;
 		public Health*   Health;
 	}
 
@@ -29,8 +29,27 @@ namespace Quantum
 
 			player->PlayerRef = playerRef;
 
-			frame.Set(playerEntity, new Respawn());
+			var weapons    = frame.Unsafe.GetPointer<Weapons>(playerEntity);
+			var weaponList = frame.AllocateList<EntityRef>(playerData.Weapons.Length);
 
+			weapons->WeaponList = weaponList;
+
+			for (int idx = 0; idx < playerData.Weapons.Length; idx++)
+			{
+				var weaponEntity    = frame.Create(playerData.Weapons[idx]);
+				var weaponTransform = frame.Unsafe.GetPointer<Transform2D>(weaponEntity);
+
+				weaponTransform->Position = FPVector2.Up * 1000;
+
+				weaponList.Add(weaponEntity);
+
+				if (idx == 0)
+				{
+					weapons->ActiveWeapon = weaponEntity;
+				}
+			}
+
+			frame.Set(playerEntity, new Respawn());
 			frame.Unsafe.GetPointer<Transform2D>(playerEntity)->Position = FPVector2.Up * 1000;
 		}
 	}

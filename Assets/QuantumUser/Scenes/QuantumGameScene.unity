@@ -1666,6 +1666,9 @@ MonoBehaviour:
       Id:
         Value: 1513755930303648667
     PlayerNickname: 
+    Weapons:
+    - Id:
+        Value: 1455346403491721100
   MaxPlayerCount: 0
   SimulationSpeedMultiplier: 1
   DisplaySaveAndReloadButton: 0
@@ -5678,7 +5681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Quantum.Unity::Quantum.QuantumInstantReplayDemo
   PlaybackSpeed: 1
-  ReplayLengthSec: 2.5
+  ReplayLengthSec: 2
   ShowReplayLabel: 1
   ShowFadingEffect: 1
   IsReplayRunning: 0

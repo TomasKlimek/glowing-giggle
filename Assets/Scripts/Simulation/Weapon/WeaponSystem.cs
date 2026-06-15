@@ -1,17 +1,17 @@
 ﻿namespace Quantum
 {
-	public unsafe struct WeaponFilter
+	public unsafe struct WeaponsFilter
 	{
 		public EntityRef    Entity;
-		public Weapon*      Weapon;
+		public Weapons*     Weapons;
 		public Transform2D* Transform;
 	}
 
-	internal unsafe sealed class WeaponSystem : SystemMainThreadFilter<WeaponFilter>
+	internal unsafe sealed class WeaponSystem : SystemMainThreadFilter<WeaponsFilter>
 	{
-		public override void Update(Frame frame, ref WeaponFilter filter)
+		public override void Update(Frame frame, ref WeaponsFilter filter)
 		{
-			filter.Weapon->Update(frame, in filter);
+			filter.Weapons->Update(frame, in filter);
 		}
 	}
 }

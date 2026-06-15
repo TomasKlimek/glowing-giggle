@@ -27,12 +27,12 @@
 				var input = frame.GetPlayerInput(filter.Player->PlayerRef);
 
 				filter.Movement->Desires = input->Direction;
-				filter.Weapon  ->Desires = input->Attack.IsDown;
+				filter.Weapons  ->Desires = input->Attack.IsDown;
 			}
 			else
 			{
 				filter.Movement->Desires = default;
-				filter.Weapon  ->Desires = default;
+				filter.Weapons  ->Desires = default;
 			}
 		}
 	}

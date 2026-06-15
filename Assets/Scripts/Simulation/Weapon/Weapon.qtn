@@ -1,9 +1,16 @@
+component Weapons
+{
+	[ExcludeFromPrototype] EntityRef       ActiveWeapon;
+	[ExcludeFromPrototype] list<EntityRef> WeaponList;
+	[ExcludeFromPrototype] bool            Desires;
+}
+
 component Weapon
 {
 	FP                        AttackTime;
 	FP                        Range;
 	AssetRef<EntityPrototype> Projectile;
 
-	[ExcludeFromPrototype] bool Desires;
-	[ExcludeFromPrototype] FP   Timer;
+	[ExcludeFromPrototype] EntityRef Owner;
+	[ExcludeFromPrototype] FP        Timer;
 }
