@@ -402,6 +402,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Quantum.Unity::Quantum.QPrototypeHealth
   Prototype:
-    Max: 10
+    Max: 5
     RespawnTime:
       RawValue: -65536

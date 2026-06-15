@@ -500,7 +500,7 @@ MonoBehaviour:
   Prototype:
     Max: 3
     RespawnTime:
-      RawValue: 131072
+      RawValue: 196608
 --- !u!114 &8826239161974986362
 MonoBehaviour:
   m_ObjectHideFlags: 0

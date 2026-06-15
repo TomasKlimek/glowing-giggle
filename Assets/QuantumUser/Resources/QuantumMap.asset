@@ -871,7 +871,7 @@ MonoBehaviour:
     - rid: 148854652274737155
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 278375135604375552
@@ -929,7 +929,7 @@ MonoBehaviour:
     - rid: 278375135604375555
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 316584852591738880
@@ -1043,7 +1043,7 @@ MonoBehaviour:
     - rid: 798146992525017091
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 1185236649563389952
@@ -1115,7 +1115,7 @@ MonoBehaviour:
     - rid: 1374670056213970947
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 1582214717181526016
@@ -1173,7 +1173,7 @@ MonoBehaviour:
     - rid: 1582214717181526019
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 1585675284001062912
@@ -1245,7 +1245,7 @@ MonoBehaviour:
     - rid: 1901163826863144963
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 2018073549624836096
@@ -1303,7 +1303,7 @@ MonoBehaviour:
     - rid: 2018073549624836099
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 2035239054290714624
@@ -1389,7 +1389,7 @@ MonoBehaviour:
     - rid: 3128829816246108163
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 3246769540884856832
@@ -1461,7 +1461,7 @@ MonoBehaviour:
     - rid: 3566915063098900483
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 3631621796987404288
@@ -1547,7 +1547,7 @@ MonoBehaviour:
     - rid: 4187254534885605379
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 4248807865130680320
@@ -1633,7 +1633,7 @@ MonoBehaviour:
     - rid: 4374623256267718659
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 4744752087454187520
@@ -1719,7 +1719,7 @@ MonoBehaviour:
     - rid: 5227799182265286659
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 5855463229001564160
@@ -1805,7 +1805,7 @@ MonoBehaviour:
     - rid: 6323212917319663619
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 6337689600659554304
@@ -1877,7 +1877,7 @@ MonoBehaviour:
     - rid: 6577843465814540291
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 6993891965615996928
@@ -1935,7 +1935,7 @@ MonoBehaviour:
     - rid: 6993891965615996931
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 7049409002794385408
@@ -2021,7 +2021,7 @@ MonoBehaviour:
     - rid: 7087370702600273923
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 7144375394043428864
@@ -2149,7 +2149,7 @@ MonoBehaviour:
     - rid: 8143593475258974211
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 8623280950014377984
@@ -2207,7 +2207,7 @@ MonoBehaviour:
     - rid: 8623280950014377987
       type: {class: HealthPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        Max: 10
+        Max: 5
         RespawnTime:
           RawValue: -65536
     - rid: 8965394778975895552

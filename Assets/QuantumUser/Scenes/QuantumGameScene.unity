@@ -1643,7 +1643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Quantum.Unity::Quantum.QuantumRunnerLocalDebug
   DeltaTimeType: 1
-  RecordingFlags: 0
+  RecordingFlags: 1
   InstantReplayConfig:
     SnapshotsPerSecond: 1
     LengthSeconds:
@@ -4657,12 +4657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d80a0dde3922e0f47b2e12ce66a4cfdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Quantum.Unity::Quantum.QuantumDebugInput
-  _lastInput:
-    Direction:
-      X:
-        RawValue: 0
-      Y:
-        RawValue: 0
 --- !u!4 &1687466208
 Transform:
   m_ObjectHideFlags: 0
@@ -5653,6 +5647,73 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0008c51fe3af00b4da5d44f02d9b3dff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Quantum.Unity::Quantum.QuantumEntityView
+--- !u!1 &2094405280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2094405283}
+  - component: {fileID: 2094405282}
+  - component: {fileID: 2094405281}
+  m_Layer: 0
+  m_Name: InstantReplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2094405281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094405280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8de03a459e384248a118c28402f780e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Quantum.Unity::Quantum.QuantumInstantReplayDemo
+  PlaybackSpeed: 1
+  ReplayLengthSec: 2.5
+  ShowReplayLabel: 1
+  ShowFadingEffect: 1
+  IsReplayRunning: 0
+  Button_StartInstantReplay: 0
+  Button_StopInstantReplay: 0
+  RewindMode: 2
+  EnableLoop: 0
+  NormalizedTime: 0
+--- !u!114 &2094405282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094405280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04bef32207f0e454f8c85cfaf2b641d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+--- !u!4 &2094405283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094405280}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &854241409366976325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5794,3 +5855,4 @@ SceneRoots:
   - {fileID: 641458601}
   - {fileID: 1687466208}
   - {fileID: 1821555623}
+  - {fileID: 2094405283}
