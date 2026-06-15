@@ -7,8 +7,6 @@ namespace Quantum {
   /// </summary>
   public class QuantumDebugInput : MonoBehaviour {
 
-    [SerializeField] Input _lastInput;
-
     private bool _attackPressed;
 
     private void OnEnable() {
@@ -37,7 +35,6 @@ namespace Quantum {
       var horizontal = UnityEngine.Input.GetAxis("Horizontal");
       var vertical  = UnityEngine.Input.GetAxis("Vertical");
 
-
       var directon = new FPVector2
       {
         X = horizontal > 0 ? FP._1 : horizontal < 0 ? FP.Minus_1 : 0,
@@ -49,7 +46,6 @@ namespace Quantum {
 
       callback.SetInput(i, DeterministicInputFlags.Repeatable);
 
-      _lastInput     = i;
       _attackPressed = false;
     }
   }

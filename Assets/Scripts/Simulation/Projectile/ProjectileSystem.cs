@@ -26,7 +26,7 @@
 
 			if (frame.Unsafe.TryGetPointer<Health>(info.Other, out var health) == true)
 			{
-				health->DealDamage(frame, info.Other, 1);
+				health->ApplyDamage(frame, info.Other, 1);
 			}
 
 			frame.Destroy(info.Entity);

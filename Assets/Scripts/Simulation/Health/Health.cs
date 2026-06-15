@@ -1,10 +1,10 @@
 ﻿namespace Quantum
 {
-	unsafe partial struct Health
+	partial struct Health
 	{
 		public bool IsAlive => Current > 0;
 
-		public void DealDamage(Frame frame, EntityRef entity, int value)
+		public void ApplyDamage(Frame frame, EntityRef entity, int value)
 		{
 			Current -= value;
 
