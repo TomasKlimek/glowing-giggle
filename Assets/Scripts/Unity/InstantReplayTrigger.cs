@@ -8,7 +8,7 @@ namespace Quantum
 
 		private void Start()
 		{
-		//	QuantumEvent.Subscribe<EventOnDeath>(this, OnDeathEvent);
+			QuantumEvent.Subscribe<EventOnDeath>(this, OnDeathEvent);
 			_demoReplay = GetComponent<QuantumInstantReplayDemo>();
 		}
 
@@ -17,16 +17,16 @@ namespace Quantum
 			QuantumEvent.UnsubscribeListener(this);
 		}
 
-	//	private unsafe void OnDeathEvent(EventOnDeath evt)
-	//	{
-	//		var frame = evt.Game.Frames.Predicted;
-	//
-	//		if (frame.Unsafe.TryGetPointer<Player>(evt.Entity, out var player) == false)
-	//			return;
-	//		if (evt.Game.GetLocalPlayers().Contains(player->PlayerRef) == false)
-	//			return;
-	//
-	//		_demoReplay.Editor_StartInstantReplay();
-	//	}
+		private unsafe void OnDeathEvent(EventOnDeath evt)
+		{
+			var frame = evt.Game.Frames.Predicted;
+
+			if (frame.Unsafe.TryGetPointer<Player>(evt.entity, out var player) == false)
+				return;
+			if (evt.Game.GetLocalPlayers().Contains(player->PlayerRef) == false)
+				return;
+
+			_demoReplay.Editor_StartInstantReplay();
+		}
 	}
 }

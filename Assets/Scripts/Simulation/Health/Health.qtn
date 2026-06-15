@@ -5,3 +5,9 @@ component Health
 
 	[ExcludeFromPrototype] int Current;
 }
+
+
+synced event OnDeath
+{
+    EntityRef entity;
+}

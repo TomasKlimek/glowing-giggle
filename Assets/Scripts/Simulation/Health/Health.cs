@@ -19,6 +19,8 @@
 			{
 				frame.Destroy(entity);
 			}
+
+			frame.Events.OnDeath(entity);
 		}
 
 		public void Revive()
